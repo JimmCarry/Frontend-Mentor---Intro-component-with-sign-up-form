@@ -37,6 +37,7 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100vw;
     height: 100vh;
+    font-size: 16px;
 }
 main {
     width: 100%;
@@ -44,4 +45,81 @@ main {
     background-image: url('../images/bg-intro-desktop.png');
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+}
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+section {
+    width: 50%;
+    height: 100%;
+}
+/* TITLE SECTION */
+.title_section {
+    display: flex;
+    align-items: center;
+}
+.title_section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+.title_section p {
+    color: #fff;
+}
+/* FORM SECTION */
+.button_free {
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    padding: 0.75rem 0;
+    border-radius: 0.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.button_free span {
+    color: hsl(246, 25%, 77%);
+}
+.submit_form {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.submit_form input {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+    border-radius: 0.35rem;
+}
+.button_submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0.35rem;
+    margin-bottom: 1rem;
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.submit_form p {
+    font-size: 0.6rem;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
+}
+.submit_form p span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
 }
