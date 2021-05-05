@@ -45,6 +45,7 @@ main {
     background-image: url('../images/bg-intro-desktop.png');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     background-color: hsl(0, 100%, 74%);
     display: flex;
     align-items: center;
@@ -75,6 +76,10 @@ section {
     color: #fff;
 }
 /* FORM SECTION */
+.form_section {
+    padding: 2rem;
+    min-width: 400px;
+}
 .button_free {
     background-color: hsl(248, 32%, 49%);
     width: 100%;
@@ -89,6 +94,7 @@ section {
     color: hsl(246, 25%, 77%);
 }
 .submit_form {
+    
     background-color: #fff;
     padding: 3rem;
     border-radius: 0.5rem;
@@ -97,9 +103,8 @@ section {
 }
 .submit_form input {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     border: 1px solid gray;
-    margin-bottom: 1rem;
     border-radius: 0.35rem;
 }
 .button_submit {
@@ -122,4 +127,72 @@ section {
 .submit_form p span {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+/* Form Validation */
+.input_control {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.input_control span, .input_control svg {
+    display: none;
+}
+.input_control span {
+    padding-top: 0.2rem;
+}
+/* Error */
+.error span {
+    display: block;
+    color: hsl(0, 100%, 74%);
+    width: 100%;
+    text-align: right;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+.error svg {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 2rem;
+}
+/* Success */
+.success input {
+    border: 2px solid #bada55;
+}
+.success svg {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 2rem;
+}
+.success svg circle {
+    fill: #bada55;
+}
+@media (max-width: 920px) {
+    .container {
+        display: block;
+        width: 90%;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    section {
+        width: 100%;
+
+    }
+    .title_section h1 {
+        font-size: 2rem;
+        padding-top: 3.5rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .button_free {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
