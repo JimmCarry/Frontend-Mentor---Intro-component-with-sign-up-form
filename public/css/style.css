@@ -78,6 +78,7 @@ section {
 /* FORM SECTION */
 .form_section {
     padding: 2rem;
+    padding-top: 1rem;
     min-width: 400px;
 }
 .button_free {

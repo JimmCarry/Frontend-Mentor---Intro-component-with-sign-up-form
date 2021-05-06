@@ -4,7 +4,7 @@ const lastName = document.getElementById('last_name');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', function (e) {
     e.preventDefault();
 
     checkForm();
