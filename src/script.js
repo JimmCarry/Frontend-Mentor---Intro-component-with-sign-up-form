@@ -31,6 +31,8 @@ function checkForm() {
 
     if (emailValue === '') {
         setErrorMessage(email, 'Email cannot be empty')
+    } else if (!validateEmail(emailValue)) {
+        setErrorMessage(email, 'This is not a valid email')
     } else {
         setSuccessMessage(email)
     }
@@ -53,6 +55,11 @@ function setErrorMessage(input, message) {
 function setSuccessMessage(input) {
     const parentElement = input.parentElement;
 	parentElement.className = 'input_control success';
+}
+
+// VALIDATE EMAIL
+function validateEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
 // POST FORM 
